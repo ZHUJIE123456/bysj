@@ -1,0 +1,627 @@
+[ 2017-03-17T23:24:04+08:00 ] 127.0.0.1 /shop/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:24:09+08:00 ] 127.0.0.1 /shop/admin.php/Login/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_user_admin` [ RunTime:0.052000s ]
+SQL: SELECT * FROM `mss_user_admin` WHERE ( `username` = 'admin' ) AND ( `userpwd` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `mss_user_admin` SET `logintime`=1489764249 WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:24:10+08:00 ] 127.0.0.1 /shop/admin.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.017000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_user` WHERE ( ustatus=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_user` WHERE (  (`regtime` BETWEEN 1489334400 AND 1489248000 ) ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.012000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` WHERE ( paystatus=3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` WHERE ( `paystatus` NOT IN ('3') ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.010000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.059000s ]
+SQL: SELECT * FROM `mss_admin_log` ORDER BY time desc LIMIT 0,5   [ RunTime:0.023000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:24:24+08:00 ] 127.0.0.1 /shop/admin.php/Order/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.021000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `mss_order` ORDER BY addtime desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=39 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=38 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=37 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:24:28+08:00 ] 127.0.0.1 /shop/admin.php/Order/upda/id/37
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: did E:\phpStudy\WWW\shop\Admin\Lib\Action\OrderAction.class.php 第 337 行.
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.027000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( id=37 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid=37 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:24:35+08:00 ] 127.0.0.1 /shop/admin.php/Order/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.018000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `mss_order` ORDER BY addtime desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=39 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=38 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=37 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:24:38+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/37
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.013000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 37 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.023000s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='37' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '广东' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '佛山' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '三水区' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:24:39+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/37
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.016000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 37 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.016000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='37' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1054:Unknown column '广东' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '佛山' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '三水区' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:25:07+08:00 ] 127.0.0.1 /shop/admin.php/Comment/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.022000s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1489764307,'管理员admin查看了商品列表','127.0.0.1') [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_comment` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mss_comment`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:25:13+08:00 ] 127.0.0.1 /shop/admin.php/Comment/upda/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_comment` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `mss_comment` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.014000s ]
+NOTIC: [8] Undefined variable: row E:\phpStudy\WWW\shop\Admin\Lib\Action\CommentAction.class.php 第 102 行.
+SQL: SELECT * FROM `mss_goods` LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Admin/Tpl/Index/sider.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\phpStudy\WWW\shop\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:29:39+08:00 ] 127.0.0.1 /shop/admin.php/Comment/upda/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_comment` [ RunTime:0.025000s ]
+SQL: SELECT * FROM `mss_comment` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.011000s ]
+NOTIC: [8] Undefined variable: row E:\phpStudy\WWW\shop\Admin\Lib\Action\CommentAction.class.php 第 102 行.
+SQL: SELECT * FROM `mss_goods` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Admin/Tpl/Index/sider.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\phpStudy\WWW\shop\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:29:42+08:00 ] 127.0.0.1 /shop/admin.php/Order/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.015000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.019000s ]
+SQL: SELECT * FROM `mss_order` ORDER BY addtime desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=40 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=39 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=38 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=37 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:29:48+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.029000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.019000s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='40' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=16 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=224 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=1889 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:29:56+08:00 ] 127.0.0.1 /shop/admin.php/Order/queren/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.023000s ]
+SQL: UPDATE `mss_order` SET `orderstatus`=1 WHERE ( id=40 ) [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:29:59+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.027000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.019000s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='40' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=224 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=1889 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:30:08+08:00 ] 127.0.0.1 /shop/admin.php/Order/fahuo/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.027000s ]
+SQL: UPDATE `mss_order` SET `sendstatus`=1,`sendtime`=1489764608 WHERE ( id=40 ) [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-17T23:30:10+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.023000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.015000s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='40' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=16 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=224 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=1889 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:30:34+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.028000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='40' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=224 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=1889 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:30:37+08:00 ] 127.0.0.1 /shop/admin.php/Order/wancheng/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.026000s ]
+SQL: UPDATE `mss_order` SET `sendstatus`=3,`endtime`=1489764637 WHERE ( id=40 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-17T23:30:39+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.022000s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 40 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.022000s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='40' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=16 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=224 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=1889 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+

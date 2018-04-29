@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<head>
+	<title><{$gdata.gname}></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- Bootstrap不支持IE的兼容模式，此处使IE浏览器运行最新的渲染模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 响应式布局开启视窗控制 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 页面信息 -->
+	<meta name="keywords" content="<{$head.keywords}>">
+	<meta name="description" content="<{$head.description}>">
+	
+	<!-- Bootstrap 核心 css 文件-->
+	<link rel="stylesheet" href="__PUBLIC__/index/dist/css/bootstrap.min.css">
+	<!-- HTML5 支持性检测.js IE8 支持 HTML5 的元素和媒体查询 -->
+	<!-- 警告: js文件不工作，通过以下方式查看源文件:// -->
+	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- bootstrap css 文件引入 -->
+	<link rel="stylesheet" href="__PUBLIC__/index/css/bootstrap.css">
+	<link rel="stylesheet" href="__PUBLIC__/index/css/bootstrap-theme.css">
+	<!-- // bootstrap css 文件引入 -->
+
+	<!-- 一般 css 文件引入 -->
+	<link rel="stylesheet" href="__PUBLIC__/index/css/minified.css">
+	<!-- // 一般 css 文件引入 -->
+	<script src="__PUBLIC__/js/jquery-1.8.3.js"></script>
+	<!--[if IE 8]>
+		<script src="__PUBLIC__/index/js/respond.min.js"></script>
+		<script src="__PUBLIC__/index/js/selectivizr-min.js"></script>
+	<![endif]-->
+	
+	<!-- 挂载 jquery.min.js (上线采用)到对象 window 下，若不成功直接加载 -->
+	<script>window.jQuery || document.write('<script src="__PUBLIC__/index/js/jquery.min.js"><\/script>');</script>
+	
+	<!-- // 挂载 jquery.min.js (上线采用)到对象 window 下，若不成功直接加载 -->
+	<script src="__PUBLIC__/index/js/modernizr.min.js"></script>
+	
+	<!-- 挂载bootstrap js 文件 -->
+	<script src="__PUBLIC__/index/js/bootstrap.js"></script>
+	<!-- // 挂载 bootstrap js 文件 -->
+	
+	<!-- 特定页面 css 文件 -->
+	<link rel="stylesheet" href="__PUBLIC__/index/css/jquery.nouislider.css">
+	<link rel="stylesheet" href="__PUBLIC__/index/css/owl.carousel.css">
+	<link rel="stylesheet" href="__PUBLIC__/index/css/owl.theme.css">
+	<link rel="stylesheet" href="__PUBLIC__/index/css/innerpage.css">
+	<!-- // 特定页面 css 文件 -->
+	
+	<!-- 响应式 css 文件 -->
+	<link rel="stylesheet" href="__PUBLIC__/index/css/responsive.css">
+	<!-- // 响应式 css 文件 -->
+</head>
+<script>
+	$(function(){
+				$("#addcart").click(function(){
+					var id = $("#goods_id").val();
+					var num = $("#goods_num").val();
+					var url = "<{:U('Products/cartcookie')}>";
+
+					$.post(url,{id:id,num:num},function(data){
+						if(data.status){
+						  alert('加入成功');
+						}
+					  },'json')
+				})
+		})
+</script>
+<body class="product-single">
+			
+	<!-- PAGE WRAPPER 页面封装 -->
+<div id="page-wrapper">
+	<!-- 站点头部 -->
+	<include file="./Index/Tpl/Index/header.html" />
+		<!-- BREADCRUMB 面包屑导航 -->
+		<div class="breadcrumb-container">
+			<div class="container">
+				<div class="relative">
+					<ul class="bc unstyled clearfix">
+						<li><a href="__APP__/Index/index">首页</a></li>
+						<li><a href="__APP__/Products/products">商品列表</a></li>
+						<li class="active">商品详情</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // BREADCRUMB 面包屑导航 -->
+		
+		<!-- SITE MAIN CONTENT 站点主要内容 -->
+		<main id="main-content" role="main">
+					
+			<section class="section">
+				<div class="container">
+					<div class="row">
+						<!-- PRODUCT PREVIEW 商品反馈 -->
+						<div class="col-xs-12 col-sm-4">
+							
+							<div class="product-preview">
+								<div class="big-image">
+									<a href="__PUBLIC__/Uploads/goods/<{$gdata.pic}>" data-toggle="lightbox">
+										<img src="__PUBLIC__/Uploads/goods/<{$gdata.pic}>" alt="" />
+									</a>
+								</div>
+								<!-- 遍历输出商品缩略图 -->
+								<ul class="thumbs unstyled clearfix">
+									<li>
+										<a href="__PUBLIC__/Uploads/goods/<{$gdata.pic}>">
+											<img src="__PUBLIC__/Uploads/goods/<{$gdata.pic}>" alt="" />
+										</a>
+									</li>
+									<foreach name="dimgs" item="vo">
+										<li>
+											<a href="__PUBLIC__/Uploads/goods/<{$vo.pic}>">
+												<img src="__PUBLIC__/Uploads/goods/<{$vo.pic}>" alt="" />
+											</a>
+										</li>	
+									</foreach>
+								</ul>
+							</div>
+							
+						</div>
+						<!-- // PRODUCT PREVIEW 商品反馈 -->
+						<div class="space40 visible-xs"></div>
+						<!-- PRODUCT DETAILS 商品详情 -->
+						<form action="__APP__/Checkout/checkout/id/<{$gdata.id}>" method="post">
+				
+						<div class="col-xs-12 col-sm-8">
+							<section class="product-details add-cart">
+								<header class="entry-header">
+									<h2 class="entry-title"> <{$gdata.gname}></h2>
+								</header>
+								<article class="entry-content">
+									<figure>
+										<span class="entry-price inline-middle">￥<{$gdata.price}></span>
+										<!-- 商品评论信息显示，暂时屏蔽 SC -->
+<!-- 										<div class="rate-bar inline-middle">
+											<!-- 此处需改成直接显示评价的平均值 -->
+											<!-- <input type="range" value="4.5" step="0.5" id="backing0" /> -->
+											<!-- <div class="rateit" data-rateit-backingfld="#backing0" data-rateit-starwidth="12" data-rateit-starheight="12" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="5"></div> -->
+										<!-- </div> -->
+										<!-- 评论人数显示 -->
+										<!-- <span class="entry-review-count inline-middle"></span> -->
+										
+										<ul class="entry-meta unstyled">
+											<if condition="$gdata.mprice gt 0">
+											<li style="line-height: 26px;">
+												<span class="key">原价:</span>
+												<span class="value"><font style="text-decoration:line-through;">$<{$gdata.mprice}></font></span>
+											</li>
+											</if>
+											<li style="line-height: 26px;">
+												<span class="key">商品货号:</span>
+												<span class="value"><{$gdata.gnum}></span>
+											</li>
+											<li style="line-height: 26px;">
+												<span class="key">已售出:</span>
+												<span class="value">100</span>
+											</li>
+											<li style="line-height: 26px;">
+												<span class="key">库存:</span>
+												<span class="value"><{$gdata.gtotal}></span>
+											</li>
+											<li style="line-height: 6px">&nbsp;</li>
+											<li style="line-height: 20px;">
+												<span class="key">购买数量:</span>
+											    <div class="qty-btn-group">
+											        <button class="down" type="button">
+											            <i class="iconfont-caret-down inline-middle"></i>
+											        </button>
+											        <input type="text" name="number" value="1" id="goods_num"></input>
+											        <button class="up" type="button">
+											            <i class="iconfont-caret-up inline-middle"></i>
+											        </button>
+											    </div>
+											</li>
+										</ul>
+
+										<div class="clearfix"></div>
+
+										<div class="row">
+											<div class="clearfix"></div>
+											<ul class="inline-li li-m-r-l m-t-lg">
+												<li>
+													<input type="hidden" id="goods_id" value="<{$gdata.id}>">
+													<a href="" id="addcart" class="btn btn-default btn-lg btn-round">加入购物车</a>
+												</li>
+											</ul>
+										</div>
+									</figure>
+								</article>
+							</section>
+						</div>
+						</form>
+						<!-- // PRODUCT DETAILS 商品详情 -->
+					</div>
+					<div class="m-t-lg">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#product-description" data-toggle="tab">商品描述</a></li>
+							<li><a href="#product-reviews" data-toggle="tab">客户评价</a></li>
+							
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="product-description">
+								<{$gdata.gdescription}>
+							</div>
+
+							<div class="tab-pane fade in" id="product-reviews">
+								<div class="comments-list">
+									<!-- 商品评论开始-->
+									<table border="1" class="table table-bordered data-table dataTable" width="800">
+										<foreach name="cdata" item="vo">
+											 <tr>
+									 			<td><img src="__PUBLIC__/Uploads/headpic/<{$vo.pic}>" width="40"/></td>
+									 			<td><{$vo.user_name}></td>
+									 			<td><strong>评价:</strong><{$vo.content}></td>
+											 </tr>
+										 </foreach>
+									</table>
+									<!-- 商品评论结束-->
+								</div>
+								<form action="../../add_comment" method="get">
+									<input type="hidden" value="<{$gdata.id}>" name="gid"/>
+									<textarea name="content" style="height: 80px; width:300px;"></textarea> <br/>
+									<input type="submit" value="提交" />
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<!-- // SITE MAIN CONTENT -->
+		
+		<!-- 站点页脚 -->
+		<include file="./Index/Tpl/Index/footer.html" />
+</div>
+<!-- // PAGE WRAPPER 页面封装 -->
+
+<!-- Essential Javascripts 基本的 js 文件 -->
+<script src="__PUBLIC__/index/js/minified.js"></script>
+<!-- // Essential Javascripts 基本的 js 文件 -->
+
+<!-- Particular Page Javascripts 特定页面的 js 文件 -->
+<script src="__PUBLIC__/index/js/jquery.nouislider.js"></script>
+<script src="__PUBLIC__/index/js/owl.carousel.js"></script>
+<script src="__PUBLIC__/index/js/products.js"></script>
+<!-- // Particular Page Javascripts 特定页面的 js 文件 -->	
+</body>
+</html>

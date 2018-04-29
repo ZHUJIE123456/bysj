@@ -1,0 +1,1324 @@
+[ 2018-03-29T21:32:11+08:00 ] 127.0.0.1 /shop/admin.php/Login/logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002313s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002416s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+
+[ 2018-03-29T21:32:11+08:00 ] 127.0.0.1 /shop/admin.php/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020952s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002346s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001637s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001669s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007528s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001754s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001808s ]
+
+[ 2018-03-29T21:32:17+08:00 ] 127.0.0.1 /shop/admin.php/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001799s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001897s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002721s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019046s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001782s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001841s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001694s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007285s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001743s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001796s ]
+
+[ 2018-03-29T21:33:06+08:00 ] 127.0.0.1 /shop/admin.php/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002145s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002309s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020657s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002173s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001788s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001647s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007521s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001782s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001856s ]
+
+[ 2018-03-29T21:33:11+08:00 ] 127.0.0.1 /shop/admin.php/Login/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003551s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003686s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `mss_user_admin` [ RunTime:0.006991s ]
+SQL: SELECT * FROM `mss_user_admin` WHERE ( `username` = 'admin' ) AND ( `userpwd` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.001812s ]
+SQL: UPDATE `mss_user_admin` SET `logintime`=1522330391 WHERE ( `id` = 1 ) [ RunTime:0.000309s ]
+
+[ 2018-03-29T21:33:11+08:00 ] 127.0.0.1 /shop/admin.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000390s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.008242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_user` WHERE ( ustatus=1 ) LIMIT 1   [ RunTime:0.002145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_user` WHERE (  (`regtime` BETWEEN 1521993600 AND 1521907200 ) ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.007805s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` LIMIT 1   [ RunTime:0.001925s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` WHERE ( paystatus=3 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` WHERE ( `paystatus` NOT IN ('3') ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004788s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods` LIMIT 1   [ RunTime:0.001939s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.006820s ]
+SQL: SELECT * FROM `mss_admin_log` ORDER BY time desc LIMIT 0,5   [ RunTime:0.002391s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015471s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000498s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000416s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001916s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000560s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2018-03-29T21:33:13+08:00 ] 127.0.0.1 /shop/admin.php/Config/listsConfig
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000777s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.006685s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330393,'管理员admin查看了网站配置','127.0.0.1') [ RunTime:0.003412s ]
+SQL: SHOW COLUMNS FROM `mss_webconfig` [ RunTime:0.007755s ]
+SQL: SELECT * FROM `mss_webconfig`  [ RunTime:0.003294s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026993s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000718s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000652s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002607s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000490s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2018-03-29T21:33:54+08:00 ] 127.0.0.1 /shop/admin.php/Config/updaConfig
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000465s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004692s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330434,'管理员admin修改了网站配置','127.0.0.1') [ RunTime:0.002585s ]
+SQL: SHOW COLUMNS FROM `mss_webconfig` [ RunTime:0.004432s ]
+SQL: UPDATE `mss_webconfig` SET `content`='网上商城' WHERE ( `item` = 'shopname' ) [ RunTime:0.001743s ]
+NOTIC: [8] Undefined variable: r D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Lib\Action\ConfigAction.class.php 第 41 行.
+SQL: UPDATE `mss_webconfig` SET `content`='网上商城' WHERE ( `item` = 'shoptitle' ) [ RunTime:0.000366s ]
+SQL: UPDATE `mss_webconfig` SET `content`='网上商城' WHERE ( `item` = 'keywords' ) [ RunTime:0.000281s ]
+SQL: UPDATE `mss_webconfig` SET `content`='网上商城' WHERE ( `item` = 'description' ) [ RunTime:0.000272s ]
+SQL: UPDATE `mss_webconfig` SET `content`='scz@mss.com' WHERE ( `item` = 'aemail' ) [ RunTime:0.000195s ]
+SQL: UPDATE `mss_webconfig` SET `content`='' WHERE ( `item` = 'shopowner' ) [ RunTime:0.000265s ]
+SQL: UPDATE `mss_webconfig` SET `content`='1001001001001008x' WHERE ( `item` = 'idcard' ) [ RunTime:0.000266s ]
+SQL: UPDATE `mss_webconfig` SET `content`='+(010) 6666666666' WHERE ( `item` = 'cellphone' ) [ RunTime:0.000258s ]
+SQL: UPDATE `mss_webconfig` SET `content`='www.dingcan.com' WHERE ( `item` = 'weibo' ) [ RunTime:0.000520s ]
+SQL: UPDATE `mss_webconfig` SET `content`='' WHERE ( `item` = 'address' ) [ RunTime:0.000251s ]
+SQL: UPDATE `mss_webconfig` SET `content`='999999' WHERE ( `item` = 'caddress' ) [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: p D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Lib\Action\ConfigAction.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008681s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000477s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001924s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000413s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2018-03-29T21:33:55+08:00 ] 127.0.0.1 /shop/admin.php/Config/listsConfig
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000739s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004380s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330435,'管理员admin查看了网站配置','127.0.0.1') [ RunTime:0.001622s ]
+SQL: SHOW COLUMNS FROM `mss_webconfig` [ RunTime:0.004731s ]
+SQL: SELECT * FROM `mss_webconfig`  [ RunTime:0.001867s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017675s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000528s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000525s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000380s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002094s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000695s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2018-03-29T21:33:57+08:00 ] 127.0.0.1 /shop/admin.php/Login/logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000876s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-29T21:33:57+08:00 ] 127.0.0.1 /shop/admin.php/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000467s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009362s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000564s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000555s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002273s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000475s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-03-29T21:37:42+08:00 ] 127.0.0.1 /shop/admin.php/Login/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000727s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `mss_user_admin` [ RunTime:0.005343s ]
+SQL: SELECT * FROM `mss_user_admin` WHERE ( `username` = 'admin' ) AND ( `userpwd` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.001767s ]
+SQL: UPDATE `mss_user_admin` SET `logintime`=1522330662 WHERE ( `id` = 1 ) [ RunTime:0.000396s ]
+
+[ 2018-03-29T21:37:42+08:00 ] 127.0.0.1 /shop/admin.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.004873s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_user` WHERE ( ustatus=1 ) LIMIT 1   [ RunTime:0.001722s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_user` WHERE (  (`regtime` BETWEEN 1521993600 AND 1521907200 ) ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.005339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` LIMIT 1   [ RunTime:0.001828s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` WHERE ( paystatus=3 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_order` WHERE ( `paystatus` NOT IN ('3') ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods` LIMIT 1   [ RunTime:0.002415s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004340s ]
+SQL: SELECT * FROM `mss_admin_log` ORDER BY time desc LIMIT 0,5   [ RunTime:0.001835s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019114s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000516s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000406s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002540s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004760s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003467s ]
+
+[ 2018-03-29T21:37:44+08:00 ] 127.0.0.1 /shop/admin.php/User/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000452s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.005276s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330664,'管理员admin查看了用户列表','127.0.0.1') [ RunTime:0.002381s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.006072s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.005285s ]
+SQL: SELECT * FROM `mss_userinfo`  [ RunTime:0.002094s ]
+SQL: SELECT * FROM `mss_user`  [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024201s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000548s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000475s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002953s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005760s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004116s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004231s ]
+
+[ 2018-03-29T21:37:50+08:00 ] 127.0.0.1 /shop/admin.php/User/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000949s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038469s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000538s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000442s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002427s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004682s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003452s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003526s ]
+
+[ 2018-03-29T21:37:53+08:00 ] 127.0.0.1 /shop/admin.php/Auser/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004644s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330673,'管理员admin查看了管理员列表','127.0.0.1') [ RunTime:0.001896s ]
+SQL: SHOW COLUMNS FROM `mss_user_admin` [ RunTime:0.005049s ]
+SQL: SELECT * FROM `mss_user_admin`  [ RunTime:0.001906s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020557s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000513s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002284s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004484s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004428s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004508s ]
+
+[ 2018-03-29T21:37:55+08:00 ] 127.0.0.1 /shop/admin.php/Auser/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000643s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `mss_user_status` [ RunTime:0.010054s ]
+SQL: SELECT * FROM `mss_user_status`  [ RunTime:0.003044s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022667s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000575s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003013s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005598s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004745s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004825s ]
+
+[ 2018-03-29T21:38:07+08:00 ] 127.0.0.1 /shop/admin.php/Auser/inse
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000536s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004896s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330687,'管理员admin添加了管理员','127.0.0.1') [ RunTime:0.002525s ]
+SQL: SHOW COLUMNS FROM `mss_user_admin` [ RunTime:0.005247s ]
+SQL: INSERT INTO `mss_user_admin` (`username`,`userpwd`,`email`,`level`,`addtime`,`logintime`) VALUES ('222222','79d886010186eb60e3611cd4a5d0bcae','22222@126.com','2,5,9',1522330687,0) [ RunTime:0.002574s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012118s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000539s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000550s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003150s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005641s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004434s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004555s ]
+
+[ 2018-03-29T21:38:08+08:00 ] 127.0.0.1 /shop/admin.php/Auser/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000535s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.005453s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330688,'管理员admin查看了管理员列表','127.0.0.1') [ RunTime:0.002456s ]
+SQL: SHOW COLUMNS FROM `mss_user_admin` [ RunTime:0.004768s ]
+SQL: SELECT * FROM `mss_user_admin`  [ RunTime:0.001726s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019887s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000528s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000446s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003234s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005469s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003560s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003630s ]
+
+[ 2018-03-29T21:38:12+08:00 ] 127.0.0.1 /shop/admin.php/Goods/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000519s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004919s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330692,'管理员admin查看了商品列表','127.0.0.1') [ RunTime:0.002108s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods` LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( huishou!=1 ) ORDER BY selltime desc, id  [ RunTime:0.000778s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023491s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000660s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000433s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004719s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003463s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003609s ]
+
+[ 2018-03-29T21:38:21+08:00 ] 127.0.0.1 /shop/admin.php/Goods/del/id/62
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001697s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001787s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.005086s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330701,'管理员admin删除了商品','127.0.0.1') [ RunTime:0.002433s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005630s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 62 ) LIMIT 1   [ RunTime:0.002060s ]
+SQL: DELETE FROM `mss_goods` WHERE ( id='62' ) [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021684s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002097s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002535s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003998s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012580s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003639s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003703s ]
+
+[ 2018-03-29T21:38:22+08:00 ] 127.0.0.1 /shop/admin.php/Goods/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000510s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004565s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330702,'管理员admin查看了商品列表','127.0.0.1') [ RunTime:0.001687s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004724s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods` LIMIT 1   [ RunTime:0.000405s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( huishou!=1 ) ORDER BY selltime desc, id  [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023148s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000910s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000495s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003285s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008145s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003691s ]
+
+[ 2018-03-29T21:38:25+08:00 ] 127.0.0.1 /shop/admin.php/Goods/del/id/61
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000421s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004385s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330705,'管理员admin删除了商品','127.0.0.1') [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004773s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 61 ) LIMIT 1   [ RunTime:0.001703s ]
+SQL: DELETE FROM `mss_goods` WHERE ( id='61' ) [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014768s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001786s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001717s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001644s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007018s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001705s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001754s ]
+
+[ 2018-03-29T21:38:26+08:00 ] 127.0.0.1 /shop/admin.php/Goods/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001763s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.005909s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330706,'管理员admin查看了商品列表','127.0.0.1') [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004647s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods` LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( huishou!=1 ) ORDER BY selltime desc, id  [ RunTime:0.000739s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019106s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000599s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000475s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000397s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002060s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000440s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-03-29T21:38:28+08:00 ] 127.0.0.1 /shop/admin.php/Goods/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000421s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `mss_goods_category` [ RunTime:0.004687s ]
+SQL: SELECT * FROM `mss_goods_category` ORDER BY concat(path,',',id)  [ RunTime:0.001968s ]
+SQL: SHOW COLUMNS FROM `mss_goods_type` [ RunTime:0.005719s ]
+ERR: 1146:Table 'shop.mss_goods_type' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mss_goods_type`
+SQL: SHOW COLUMNS FROM `mss_goods_vtype` [ RunTime:0.006680s ]
+ERR: 1146:Table 'shop.mss_goods_vtype' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mss_goods_vtype`
+SQL: SELECT * FROM `mss_goods_type`  [ RunTime:0.003162s ]
+ERR: 1146:Table 'shop.mss_goods_type' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `mss_goods_type` 
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Lib\Action\GoodsAction.class.php 第 63 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+NOTIC: [8] Undefined index:  classid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\eab79c9169d913586942b43aa2eb1583.php 第 152 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015548s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000545s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000414s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001892s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000400s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2018-03-29T21:38:52+08:00 ] 127.0.0.1 /shop/admin.php/Goods/inse
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001732s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004435s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330732,'管理员admin添加了商品','127.0.0.1') [ RunTime:0.002183s ]
+NOTIC: [8] Undefined index:  gcount D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Lib\Action\GoodsAction.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004736s ]
+SQL: INSERT INTO `mss_goods` (`gname`,`gtotal`,`gnum`,`mprice`,`price`,`classid`,`issell`,`gdescription`,`zuixin`,`selltime`,`pic`) VALUES ('石头姐姐',100,'324234234','100','50',0,1,'<p>打发士大夫</p>',1,1522330732,'5abcec6c8566c.jpg') [ RunTime:0.001802s ]
+SQL: SHOW COLUMNS FROM `mss_images` [ RunTime:0.004607s ]
+SQL: INSERT INTO `mss_images` (`gid`,`pic`) VALUES (63,'5abcec6c8566c.jpg') [ RunTime:0.001762s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017258s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001833s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001694s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003773s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009532s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001696s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001745s ]
+
+[ 2018-03-29T21:38:53+08:00 ] 127.0.0.1 /shop/admin.php/Goods/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000537s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004174s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330733,'管理员admin查看了商品列表','127.0.0.1') [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004792s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods` LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( huishou!=1 ) ORDER BY selltime desc, id  [ RunTime:0.000738s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023222s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000627s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000440s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002631s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004404s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000564s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-03-29T21:38:58+08:00 ] 127.0.0.1 /shop/admin.php/Class/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.006026s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330738,'管理员admin查看了分类列表','127.0.0.1') [ RunTime:0.001996s ]
+SQL: SHOW COLUMNS FROM `mss_goods_category` [ RunTime:0.004412s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods_category` LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `mss_goods_category` ORDER BY concat(path,',',id) asc,`ordernum` asc  [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005661s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=10 )  [ RunTime:0.002084s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=23 )  [ RunTime:0.000485s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=11 )  [ RunTime:0.000347s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=17 )  [ RunTime:0.000243s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=22 )  [ RunTime:0.000763s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=25 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=26 )  [ RunTime:0.000351s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=27 )  [ RunTime:0.000262s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=9 )  [ RunTime:0.000372s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=24 )  [ RunTime:0.000393s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025316s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000605s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000499s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002734s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004637s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000900s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2018-03-29T21:38:59+08:00 ] 127.0.0.1 /shop/admin.php/Class/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000425s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `mss_goods_category` [ RunTime:0.004398s ]
+SQL: SELECT * FROM `mss_goods_category` ORDER BY concat(path,',',id)  [ RunTime:0.002274s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+NOTIC: [8] Undefined index:  sid D:\PHP003\APMServ5.2.6\www\htdocs\shop\Admin\Runtime\Cache\675a983603a6602c7ef745af503cd6ff.php 第 144 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021358s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000544s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000454s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004004s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-03-29T21:39:09+08:00 ] 127.0.0.1 /shop/admin.php/Class/inse
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000435s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004625s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330749,'管理员admin添加了分类','127.0.0.1') [ RunTime:0.002443s ]
+SQL: SHOW COLUMNS FROM `mss_goods_category` [ RunTime:0.005003s ]
+SQL: SELECT * FROM `mss_goods_category` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.002211s ]
+SQL: INSERT INTO `mss_goods_category` (`cname`,`sid`,`danwei`,`ordernum`,`description`,`path`) VALUES ('测试服',10,'个',1,'<p>萨芬撒</p>','0,10') [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015329s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001692s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000484s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006690s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009724s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-03-29T21:39:10+08:00 ] 127.0.0.1 /shop/admin.php/Class/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000521s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004151s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330750,'管理员admin查看了分类列表','127.0.0.1') [ RunTime:0.001686s ]
+SQL: SHOW COLUMNS FROM `mss_goods_category` [ RunTime:0.004040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods_category` LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT * FROM `mss_goods_category` ORDER BY concat(path,',',id) asc,`ordernum` asc  [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005296s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=10 )  [ RunTime:0.001940s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=23 )  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=29 )  [ RunTime:0.000233s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=11 )  [ RunTime:0.000224s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=17 )  [ RunTime:0.000219s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=22 )  [ RunTime:0.000425s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=25 )  [ RunTime:0.000226s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=26 )  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=27 )  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=9 )  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=24 )  [ RunTime:0.000253s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021228s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000536s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000427s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002256s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003846s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000389s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-03-29T21:39:16+08:00 ] 127.0.0.1 /shop/admin.php/Class/del/id/29
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000415s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004693s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330756,'管理员admin删除了分类','127.0.0.1') [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `mss_goods_category` [ RunTime:0.004159s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005755s ]
+SQL: SELECT * FROM `mss_goods_category` WHERE ( sid=29 ) LIMIT 1   [ RunTime:0.001610s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=29 ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: DELETE FROM `mss_goods_category` WHERE ( id=29 ) [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013816s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000524s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000633s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002846s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004759s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-03-29T21:39:17+08:00 ] 127.0.0.1 /shop/admin.php/Class/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000533s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004391s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330757,'管理员admin查看了分类列表','127.0.0.1') [ RunTime:0.002362s ]
+SQL: SHOW COLUMNS FROM `mss_goods_category` [ RunTime:0.004629s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mss_goods_category` LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT * FROM `mss_goods_category` ORDER BY concat(path,',',id) asc,`ordernum` asc  [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004676s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=10 )  [ RunTime:0.001756s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=23 )  [ RunTime:0.000375s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=11 )  [ RunTime:0.000368s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=17 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=22 )  [ RunTime:0.000414s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=25 )  [ RunTime:0.000207s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=26 )  [ RunTime:0.000236s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=27 )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=9 )  [ RunTime:0.000247s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( classid=24 )  [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021285s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000680s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000470s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002850s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004659s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2018-03-29T21:39:21+08:00 ] 127.0.0.1 /shop/admin.php/Comment/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004684s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330761,'管理员admin查看了商品列表','127.0.0.1') [ RunTime:0.002329s ]
+SQL: SHOW COLUMNS FROM `mss_comment` [ RunTime:0.005213s ]
+SQL: SELECT * FROM `mss_comment`  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005788s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.002029s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=50 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023476s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000878s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000675s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002695s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005015s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000564s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2018-03-29T21:39:24+08:00 ] 127.0.0.1 /shop/admin.php/Order/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.005265s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.005521s ]
+SQL: SELECT * FROM `mss_order` ORDER BY addtime desc  [ RunTime:0.001850s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.004727s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.005763s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.001743s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=47 ) LIMIT 1   [ RunTime:0.000209s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=46 ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=38 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=39 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=37 ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=40 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=41 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=42 ) LIMIT 1   [ RunTime:0.000344s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=43 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=18 ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=44 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=45 ) LIMIT 1   [ RunTime:0.000195s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023643s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000625s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000433s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002239s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003877s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000575s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2018-03-29T21:39:31+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/47
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000686s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.005454s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 47 ) LIMIT 1   [ RunTime:0.002181s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.004818s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.001839s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.004709s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.002226s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.005060s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.007243s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.002661s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.005121s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='47' )  [ RunTime:0.002116s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005349s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.002219s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.004943s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.001675s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.005108s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1   [ RunTime:0.002013s ]
+ERR: 1054:Unknown column '广东' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1   [ RunTime:0.000163s ]
+ERR: 1054:Unknown column '佛山' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1   [ RunTime:0.000148s ]
+ERR: 1054:Unknown column '三水区' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032692s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000659s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000621s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002976s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005052s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000606s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2018-03-29T21:39:33+08:00 ] 127.0.0.1 /shop/admin.php/Order/queren/id/47
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000959s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.004960s ]
+SQL: UPDATE `mss_order` SET `orderstatus`=1 WHERE ( id=47 ) [ RunTime:0.002114s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012588s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000460s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000407s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002275s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003706s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000422s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2018-03-29T21:39:34+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/47
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.005427s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 47 ) LIMIT 1   [ RunTime:0.001771s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.004561s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.004944s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.001930s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.004374s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.005893s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.002101s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.004625s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='47' )  [ RunTime:0.001861s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004431s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001970s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.005153s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.001757s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.004048s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1   [ RunTime:0.001705s ]
+ERR: 1054:Unknown column '广东' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1   [ RunTime:0.000175s ]
+ERR: 1054:Unknown column '佛山' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1   [ RunTime:0.000208s ]
+ERR: 1054:Unknown column '三水区' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027262s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000476s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000483s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002321s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003924s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2018-03-29T21:39:36+08:00 ] 127.0.0.1 /shop/admin.php/Order/fahuo/id/47
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.004562s ]
+SQL: UPDATE `mss_order` SET `sendstatus`=1,`sendtime`=1522330776 WHERE ( id=47 ) [ RunTime:0.001590s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012228s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000610s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000504s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002475s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004192s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000402s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-03-29T21:39:37+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/47
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000598s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.004696s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 47 ) LIMIT 1   [ RunTime:0.001817s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.004774s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.001785s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.004419s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.002467s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.004717s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.005919s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.002295s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.004901s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='47' )  [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.004641s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001814s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.004890s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.001714s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.004246s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1   [ RunTime:0.001737s ]
+ERR: 1054:Unknown column '广东' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1   [ RunTime:0.000156s ]
+ERR: 1054:Unknown column '佛山' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1   [ RunTime:0.000147s ]
+ERR: 1054:Unknown column '三水区' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028169s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000512s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000501s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003976s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-03-29T21:39:40+08:00 ] 127.0.0.1 /shop/admin.php/Order/wancheng/id/47
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000441s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.004684s ]
+SQL: UPDATE `mss_order` SET `sendstatus`=3,`endtime`=1522330780 WHERE ( id=47 ) [ RunTime:0.001675s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012243s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000443s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000406s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002275s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003696s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000420s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-03-29T21:39:41+08:00 ] 127.0.0.1 /shop/admin.php/Order/showsp/id/47
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000592s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.004987s ]
+SQL: SELECT * FROM `mss_order` WHERE ( `id` = 47 ) LIMIT 1   [ RunTime:0.001750s ]
+SQL: SHOW COLUMNS FROM `mss_pays` [ RunTime:0.004885s ]
+SQL: SELECT * FROM `mss_pays` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.004556s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `mss_user` [ RunTime:0.004907s ]
+SQL: SHOW COLUMNS FROM `mss_userinfo` [ RunTime:0.006062s ]
+SQL: SELECT * FROM `mss_user` `user`,`mss_userinfo` `userinfo` WHERE ( user.id=userinfo.uid ) LIMIT 1   [ RunTime:0.001515s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.004448s ]
+SQL: SELECT * FROM `mss_order_detail` WHERE ( orderid='47' )  [ RunTime:0.002114s ]
+SQL: SHOW COLUMNS FROM `mss_goods` [ RunTime:0.005166s ]
+SQL: SELECT * FROM `mss_goods` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001765s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.004580s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.001631s ]
+SQL: SHOW COLUMNS FROM `mss_region` [ RunTime:0.004480s ]
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1   [ RunTime:0.001901s ]
+ERR: 1054:Unknown column '广东' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=广东 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1   [ RunTime:0.000207s ]
+ERR: 1054:Unknown column '佛山' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=佛山 ) LIMIT 1  
+SQL: SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1   [ RunTime:0.000183s ]
+ERR: 1054:Unknown column '三水区' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mss_region` WHERE ( region_id=三水区 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027837s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000596s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003033s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004726s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000474s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-03-29T21:39:48+08:00 ] 127.0.0.1 /shop/admin.php/Config/listsConfig
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000558s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.005003s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330788,'管理员admin查看了网站配置','127.0.0.1') [ RunTime:0.001949s ]
+SQL: SHOW COLUMNS FROM `mss_webconfig` [ RunTime:0.004331s ]
+SQL: SELECT * FROM `mss_webconfig`  [ RunTime:0.001801s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025501s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000589s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000506s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002385s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004107s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000577s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2018-03-29T21:39:49+08:00 ] 127.0.0.1 /shop/admin.php/Friend/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000710s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004805s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330789,'管理员admin查看了友情链接列表','127.0.0.1') [ RunTime:0.001595s ]
+SQL: SHOW COLUMNS FROM `mss_links` [ RunTime:0.004337s ]
+SQL: SELECT * FROM `mss_links`  [ RunTime:0.001709s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021718s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000577s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000422s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002287s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003847s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000513s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-03-29T21:39:51+08:00 ] 127.0.0.1 /shop/admin.php/Friend/add
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000627s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013694s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000580s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000445s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000378s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001978s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2018-03-29T21:40:02+08:00 ] 127.0.0.1 /shop/admin.php/Friend/inse
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000651s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.005810s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330802,'管理员admin添加了友情链接大米','127.0.0.1') [ RunTime:0.002387s ]
+SQL: SHOW COLUMNS FROM `mss_links` [ RunTime:0.005314s ]
+SQL: INSERT INTO `mss_links` (`lname`,`url`,`description`,`ordernum`,`showtype`,`target`) VALUES ('大米','www.dami.com','',0,1,'_blank') [ RunTime:0.002618s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009100s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000661s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000419s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000401s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002111s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000432s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-03-29T21:40:03+08:00 ] 127.0.0.1 /shop/admin.php/Friend/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000903s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `mss_admin_log` [ RunTime:0.004532s ]
+SQL: INSERT INTO `mss_admin_log` (`userid`,`time`,`loginfo`,`userip`) VALUES (1,1522330803,'管理员admin查看了友情链接列表','127.0.0.1') [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `mss_links` [ RunTime:0.004097s ]
+SQL: SELECT * FROM `mss_links`  [ RunTime:0.001672s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015061s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000579s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000422s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000548s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-03-29T21:41:09+08:00 ] 127.0.0.1 /shop/admin.php/Order/lists
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000561s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `mss_order` [ RunTime:0.004815s ]
+SQL: SHOW COLUMNS FROM `mss_address` [ RunTime:0.007298s ]
+SQL: SELECT * FROM `mss_order` ORDER BY addtime desc  [ RunTime:0.002605s ]
+SQL: SHOW COLUMNS FROM `mss_dilivery` [ RunTime:0.005804s ]
+SQL: SHOW COLUMNS FROM `mss_order_detail` [ RunTime:0.007925s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.001947s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=47 ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000242s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=46 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=38 ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=39 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=37 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=40 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=41 ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=42 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=43 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=18 ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=44 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `mss_address` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT * FROM `mss_dilivery` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT SUM(subtotal) AS tp_sum FROM `mss_order_detail` WHERE ( orderid=45 ) LIMIT 1   [ RunTime:0.000329s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025669s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000766s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000541s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002907s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005218s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000597s ]
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="noIE" lang="en-US"><!--<![endif]-->
+<head>
+    <title>个人中心</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Bootstrap不支持IE的兼容模式，此处使IE浏览器运行最新的渲染模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 响应式布局开启视窗控制 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- 页面信息 -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script>
+        var publicx = "__PUBLIC__";
+    </script>
+
+
+    <!-- bootstarp css 文件引入 -->
+    <link rel="stylesheet" href="__PUBLIC__/index/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/index/css/bootstrap-theme.css">
+    <link href="__PUBLIC__/css/smohan.face.css" type="text/css" rel="stylesheet">
+    <!-- // bootstrap css 文件引入 -->
+
+    <!-- 一般 css 文件引入 -->
+    <link rel="stylesheet" href="__PUBLIC__/index/css/minified.css">
+    <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/uploadify/uploadify.css"> -->
+    <!-- // 一般 css 文件引入 -->
+
+    <!--[if IE 8]>
+    <script src="js/respond.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+    <!--
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    -->
+    <!-- 挂载 jquery.min.js (上线采用)到对象 window 下，若不成功直接加载 -->
+    <script>window.jQuery || document.write('<script src="__PUBLIC__/index/js/jquery.min.js"><\/script>');</script>
+    <!-- // 挂载 jquery.min.js (上线采用)到对象 window 下，若不成功直接加载 -->
+
+    <script src="__PUBLIC__/index/js/modernizr.min.js"></script>
+
+    <!-- 挂载bootstrap js 文件 -->
+    <script src="__PUBLIC__/index/js/bootstrap.js"></script>
+    <!-- // 挂载 bootstarp js 文件 -->
+    <script src="__PUBLIC__/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/smohan.face.js" charset="utf-8"></script>
+    <!-- PARTICULAR PAGES CSS FILES 特定页面css文件 -->
+    <link rel="stylesheet" href="__PUBLIC__/index/css/innerpage.css">
+    <!-- // PARTICULAR PAGES CSS FILES 特定页面css文件 -->
+
+    <!-- 响应式 css 文件 -->
+    <link rel="stylesheet" href="__PUBLIC__/index/css/responsive.css">
+    <!-- // 响应式 css 文件 -->
+
+    <style type="text/css">
+        #file_upload{
+            position:relative;
+            top:-50px;
+            margin:0px auto;
+            text-align:center;
+            color:white;
+            font-weight:bold;
+        }
+        #bg{
+            width:100%;
+            height:20px;
+            background:black;
+            filter:alpha(opacity=50);
+            opacity:0.5;
+            position:relative;
+            top:-25px;
+        }
+        /* 格式化div使默认隐藏 */
+        #person-safe, #person-footprint, #person-address, #person-goods, #person-order, #person-collect
+        {
+            display: none;
+        }
+
+        /* 定义select 选择器，是背景颜色和页面背景色统一*/
+        .select, .text {
+            background:#EEE;
+        }
+        /* 定义file 控件格式，使垂直居中 */
+        .file {
+            display: block;
+            padding-top: 4px;
+        }
+        /* 定义图片 选择器，使宽高固定 */
+        .img40px {
+            width: 40px;
+            height: 40px;
+        }
+        .img60px {
+            width: 60px;
+            height: 60px;
+        }
+        .img80px {
+            width: 80px;
+            height: 80px;
+        }
+        /* 定义固定高度div */
+        .h20px {
+            height: 20px;
+        }
+        .h30px {
+            height: 30px;
+        }
+        /* 定义error警示色 */
+        .error {
+            color: #F03 ;
+        }
+        /* 定义灰色背景色 */
+        .back-grey {
+            background: #F2F2F2;
+        }
+        /* 格式化所有padding和marign */
+        .nopm {
+            margin: 0;
+            padding: 0
+        }
+        .nop {
+            padding: 0;
+        }
+        .nom {
+            margin: 0;
+        }
+        /* 重定义clearfix使具有高度 */
+        .clearfix{
+            height: 12px;
+        }
+        /* 重定义th标签 */
+        th {
+            border-bottom: 2px solid #DDDDDD;
+            vertical-align: bottom;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        /* 重新定义操作a链接 */
+        .a-handle:link, .a-handle-visited, a-handle:hover, .a-handle:active, .a-handle {
+            color: #00F;
+        }
+    </style>
+</head>
+<body>
+<!-- PAGE WRAPPER 页面封装 -->
+<div id="page-wrapper">
+    <!-- 引入页眉文件 -->
+    <include file="./Index/Tpl/index/header.html" />
+
+    <!-- SITE MAIN CONTENT 站点主要内容 -->
+    <main id="main-content" role="main">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="m-t-b clearfix">
+                    <!-- SIDEBAR 侧边栏 -->
+                    <aside class="col-xs-12 col-sm-4 col-md-3">
+                        <include file="./Index/Tpl/personal/left.html"/>
+                    </aside>
+                    <!-- // SIDEBAR 侧边栏 -->
+
+                    <section class="col-xs-12 col-sm-8 col-md-9">
+                        <div class="panel-group checkout" >
+                            <div class="m-t-lg">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="height: 35px;">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#checkout-collapse" style="float: left;">
+                                                我的产品
+                                            </a>
+                                            <a href="__APP__/Uproduct/add" style="float:right;color:red">【添加】</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="widget-content nopadding">
+                                    <table class="table table-bordered data-table">
+                                        <!-- 表头字段区域 -->
+                                        <thead>
+                                        <tr>
+                                            <th>名称</th>
+                                            <th>价格</th>
+                                            <th>库存(件)</th>
+                                            <th>添加时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        </thead>
+                                        <!-- 表格主体数据区域 -->
+                                        <tbody>
+                                        <foreach name="data" item="vo">
+                                            <tr height="40">
+                                                <td><{$vo.gname}></td>
+                                                <td><{$vo.price}></td>
+                                                <td><{$vo.gtotal}></td>
+                                                <td><{$vo.selltime|date="Y-m-d",###}></td>
+                                                <td class="taskOptions" style="width:120px;">
+                                                    <a href="__ROOT__/index.php/Products/product/id/<{$vo.id}>" class="tip-top" data-original-title="查看">查看</a>&nbsp;
+                                                    <a href="__URL__/upda/id/<{$vo.id}>" class="tip-top" data-original-title="编辑">编辑</a>&nbsp;
+                                                    <a href="__URL__/del/id/<{$vo.id}>" class="tip-top" data-original-title="删除" onclick="return confirm('确定要删除!!!')">
+                                                        删除
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </foreach>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- // SITE MAIN CONTENT 网站主要内容 -->
+    <!-- 引入页脚文件 -->
+    <include file="./Index/Tpl/index/footer.html" />
+</div>
+<!-- // PAGE WRAPPER 页面封装 -->
+
+<!-- Essential Javascripts 基本的 js 文件 -->
+<script src="__PUBLIC__/index/js/minified.js"></script>
+<!-- // Essential Javascripts 基本的 js 文件 -->
+
+<!-- Particular Page Javascripts 特定页面的 javascripts -->
+<script src="__PUBLIC__/index/js/owl.carousel.js"></script>
+<script src="__PUBLIC__/index/js/jquery.flexslider-min.js"></script>
+<!-- // Particular Page Javascripts 特定页面的 javascripts -->
+</body>
+</html>

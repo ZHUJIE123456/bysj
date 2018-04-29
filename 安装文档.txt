@@ -1,0 +1,4 @@
+1、导入“mss.sql“文件，包含测试数据
+2、修改源代码文件夹config.inc.php里的数据库信息
+3、输入后台域名/admin.php管理员：admin，密码：admin
+4、前台有邮箱验证 测试账号：hupeng1 123456

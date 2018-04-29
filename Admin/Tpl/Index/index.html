@@ -1,0 +1,84 @@
+		<!-- 包含顶部 -->
+		<include file="./Admin/Tpl/Index/header.html" />
+		
+
+<!-- ////////////////////////////////////////// 顶部 ///////////////////////////// -->
+
+		<!-- 后台颜色切换  -->
+<!-- 		<div id="style-switcher">
+			<i class="icon-arrow-left icon-white"></i>
+			<span>Style:</span>
+			<a href="#grey" style="background-color: #555555;border-color: #aaaaaa;"></a>
+			<a href="#blue" style="background-color: #2D2F57;"></a>
+			<a href="#red" style="background-color: #673232;"></a>
+		</div> -->
+		
+		<div id="content">
+            <!-- 顶部面包屑导航 开始 -->
+			<div id="breadcrumb">
+				<a href="#" title="返回首页" class="tip-bottom"><i class="icon-home"></i> 首页</a>
+				<a href="#" class="current">控制面板</a>
+			</div>
+            <!-- 顶部面包屑导航 结束 -->
+			<div class="container-fluid">
+                <!-- 下部组件 -->
+				<div class="row-fluid">
+					<!-- -->
+					<div class="span6">
+						<div class="widget-box">
+							<!-- 标题 -->
+							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>操作动态</h5></div>
+							<!-- 内容部分 开始 -->
+							<div class="widget-content nopadding">
+								<foreach name="log" item="v">
+									<{$v.loginfo}><br />
+								</foreach>
+							</div>
+							<!-- 内容部分 结束-->
+						</div>
+					</div>
+					<!-- -->
+					<div class="span6">
+						<div class="widget-box">
+							<!-- 标题 -->
+							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>系统信息</h5></div>
+							<!-- 内容部分 开始 -->
+							<div class="widget-content nopadding">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td>服务器操作系统：</td>
+											<td><{$sysinfo.os}>&nbsp;<{$sysinfo.ip}></td>
+										</tr>
+										<tr>
+											<td>Web 服务器：</td>
+											<td><{$sysinfo.web_server}></td>
+										</tr>
+										<tr>
+											<td>PHP 版本：</td>
+											<td><{$sysinfo.php_ver}></td>
+										</tr>
+										<tr>
+											<td>MySQL 版本：</td>
+											<td>5.0.51b-community-nt-log</td>
+										</tr>
+										<tr>
+											<td>ThinkPHP 版本：</td>
+											<td><{$Think.version}></td>
+										</tr>
+										<tr>
+											<td>系统 版本：</td>
+											<td>V1.0</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- 内容部分 结束-->
+						</div>
+					</div>
+				</div>
+					
+	<!--//////////////////////////////////////////////  底部 //////////////////////////////////-->
+
+		<!-- 包含底部 -->
+		<include file="./Admin/Tpl/Index/footer.html" />
